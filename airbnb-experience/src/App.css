@@ -14,7 +14,7 @@ body {
 }
 
 .logo {
-  width: 100px;
+  width: 150px;
 }
 
 /* Main Content */
@@ -44,4 +44,31 @@ body {
 
 .hero-text {
   font-size: 30px;
+}
+
+/* Card Styling */
+.card {
+  margin: 5%;
+  width: fit-content;
+}
+
+.card-image {
+  width: 450px;
+  border-radius: 25px;
+}
+
+.card-description {
+  font-size: 30px;
+}
+
+.card-description > p {
+  margin: 1%;
+}
+
+.gray {
+  color: #918e9b;
+}
+
+.bold {
+  font-weight: bold;
 }
