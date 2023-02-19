@@ -9,7 +9,7 @@ export default function Card(props) {
         <span>
           {props.rating}{" "}
           <span className="gray">
-            ({props.reviewCount}) {props.country}
+            ({props.reviewCount}) • {props.country}
           </span>
         </span>
         <p>{props.title}</p>
