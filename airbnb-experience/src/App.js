@@ -3,22 +3,27 @@ import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import Card from "./components/Card"
 import katie from "./images/katie-zaferes.png";
+import data from "./data"
 
 
 
 function App() {
+  const card = data.map(x => (<Card
+    coverImg={x.coverImg}
+    rating={x.stats.rating}
+    reviewCount={x.stats.reviewCount}
+    location={x.location}
+    title={x.title}
+    price={x.price}
+
+  />))
+
   return (
     <>
       <Navbar />
       <Hero />
-      <Card
-        img={katie}
-        rating="5.0"
-        reviewCount={6}
-        country="USA"
-        title="Life Lessons with Katie Zaferes"
-        price={136}
-      />
+      <div>{card}</div>
+
     </>
   );
 }
