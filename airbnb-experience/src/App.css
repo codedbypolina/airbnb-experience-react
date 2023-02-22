@@ -58,6 +58,10 @@ body {
   border-radius: 25px;
 }
 
+.main_card {
+  display: flexbox;
+}
+
 .card-description {
   font-size: 30px;
 }

@@ -19,13 +19,14 @@ function App() {
      <Card coverImg={image.coverImg} />
    )) */
 
-  const card = data.map(x => (<Card
-    coverImg={x.coverImg}
-    rating={x.stats.rating}
-    reviewCount={x.stats.reviewCount}
-    location={x.location}
-    title={x.title}
-    price={x.price}
+  const card = data.map(item => (<Card
+    key={item.id}
+    coverImg={item.coverImg}
+    rating={item.stats.rating}
+    reviewCount={item.stats.reviewCount}
+    location={item.location}
+    title={item.title}
+    price={item.price}
 
   />))
 
@@ -33,7 +34,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <div>{card}</div>
+      <div className='main_card'>{card}</div>
 
     </>
   );
