@@ -5,7 +5,7 @@ export default function Card(props) {
     <div className="card">
       <img src={props.coverImg} className="card-image" />
       <div className="card-description">
-        <img src={star} alt="Star" />
+        <img src={star} alt="Star" className="star" />
         <span>
           {props.rating}{" "}
           <span className="gray">

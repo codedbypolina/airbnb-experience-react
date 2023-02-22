@@ -34,7 +34,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <div className='main_card'>{card}</div>
+      <section className='main_card'>{card}</section>
 
     </>
   );
